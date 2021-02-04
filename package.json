@@ -1,0 +1,40 @@
+{
+  "name": "calculator-app-new",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Miftahhul <akun.yuda121@gmail.com>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^11.2.1",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "com.ipenywis.app",
+    "productName": "Electron Test App",
+    "target": "NSIS",
+    "directories": {
+        "output": "build"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "docker": "^1.0.0",
+    "jquery": "^3.5.1"
+  }
+}
